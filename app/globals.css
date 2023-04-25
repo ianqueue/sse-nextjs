@@ -105,3 +105,40 @@ a {
     color-scheme: dark;
   }
 }
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: 1em solid rgb(102, 255, 0);
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation: 
+    typing 2s steps(28, end),
+    blink-caret .75s step-end infinite;
+  animation-fill-mode: forwards;
+  width: 40.3em;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 1em solid rgb(102, 255, 0);;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: rgb(102, 255, 0); }
+}
+
+.newline {
+  margin-bottom: 1rem; 
+}
